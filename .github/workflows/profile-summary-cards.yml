@@ -16,7 +16,7 @@ jobs:
       
     steps:
       - uses: actions/checkout@v2
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
+      - uses: amiMohammad/Profile_Summary_Cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
