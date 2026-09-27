@@ -1,0 +1,63 @@
+name: GitHub-Profile-Summary-Cards
+description: Generate profile summary cards and commit to default branch
+author: amiMohammad
+
+inputs:
+  USERNAME:
+    type: string
+    required: true
+    description: 'GitHub username'
+    default: ${{ github.repository_owner }}
+  BRANCH_NAME:
+    type: string
+    required: false
+    description: 'The branch to push cards'
+    default: 'master'
+  UTC_OFFSET:
+    type: string
+    required: false
+    description: 'The UTC offset used in the Productive Time Card.(e.g., 8, -3)'
+    default: '0'
+  EXCLUDE:
+    type: string
+    required: false
+    description: 'A comma separated list of languages to exclude'
+    default: ''
+  EXCLUDE_REPOS:
+    type: string
+    required: false
+    description: 'A comma separated list of repository names to exclude from the language cards'
+    default: ''
+  AUTO_PUSH:
+    type: boolean
+    required: false
+    description: 'Whether automatically push generated files to desired branch'
+    default: true
+  THEME:
+    type: string
+    required: false
+    description: 'Generate only this theme (e.g. github_dark). Leave empty to generate every theme.'
+    default: ''
+  ANIMATION:
+    type: string
+    required: false
+    description: 'Bake a CSS animation into the cards'
+    default: ''
+  DURATION:
+    type: string
+    required: false
+    description: 'Animation speed in seconds'
+    default: ''
+  NAME:
+    type: string
+    required: false
+    description: 'Override the displayed name on the profile-details card'
+    default: ''
+
+runs:
+  using: 'node24'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'activity'
+  color: 'orange'
