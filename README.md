@@ -1,6 +1,6 @@
 # Profile_Summary_Cards-example
 
-:star: [Tutorial](https://github.com/amiMohammad/Profile_Summary_Cards/wiki/Tutorial) ( Recommendation ) :star:
+:star: [Tutorial](https://github.com/vn7n24fzkq/github-profile-summary-cards/wiki/Tutorial) ( Recommendation ) :star:
 
 Action already setup In this template, you just need click `use this template` button to create your repo and wait for workflow to finish.
 
